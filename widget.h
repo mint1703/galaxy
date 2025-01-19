@@ -3,6 +3,8 @@
 
 #include <QWidget>
 #include <QPalette>
+#include <QGraphicsScene>
+#include <QGraphicsView>
 
 class Widget : public QWidget
 {
@@ -13,5 +15,7 @@ public:
     ~Widget();
 private:
     QPalette *backgroundPalette;
+    QGraphicsScene *scene;
+    QGraphicsView  *view;
 };
 #endif // WIDGET_H
